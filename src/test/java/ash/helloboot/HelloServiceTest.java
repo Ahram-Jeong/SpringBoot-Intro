@@ -11,4 +11,12 @@ public class HelloServiceTest {
 
         Assertions.assertThat(ret).isEqualTo("Hello 조승연");
     }
+
+    @Test
+    void helloDecorator() {
+        HelloDecorator decorator = new HelloDecorator(name -> name);
+        String ret = decorator.sayHello("Woodz");
+
+        Assertions.assertThat(ret).isEqualTo("*Woodz*");
+    }
 }
