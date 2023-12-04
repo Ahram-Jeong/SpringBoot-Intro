@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Bean;
 
 @MyAutoConfiguration
 public class TomcatWebServerConfig {
-    @Bean
+    @Bean("tomcatWebServerFactory")
     public ServletWebServerFactory servletWebServerFactory() {
         return new TomcatServletWebServerFactory();
     }
