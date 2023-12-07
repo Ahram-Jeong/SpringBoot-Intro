@@ -13,6 +13,8 @@ public class TomcatWebServerConfig {
     @Bean("tomcatWebServerFactory")
     @ConditionalOnMissingBean // 사용자 구성 정보에서 만들어진 ServletWebServerFactory가 없을 경우, 해당 Bean을 생성하는 조건
     public ServletWebServerFactory servletWebServerFactory() {
-        return new TomcatServletWebServerFactory();
+        TomcatServletWebServerFactory factory = new TomcatServletWebServerFactory();
+        factory.setContextPath("/app");
+        return factory;
     }
 }
