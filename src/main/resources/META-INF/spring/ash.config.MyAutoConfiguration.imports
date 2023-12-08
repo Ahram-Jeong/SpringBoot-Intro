@@ -2,3 +2,4 @@
 ash.config.autoconfig.TomcatWebServerConfig
 ash.config.autoconfig.JettyWebServerConfig
 ash.config.autoconfig.DispatcherServletConfig
+ash.config.autoconfig.PropertyPlaceholderConfig
