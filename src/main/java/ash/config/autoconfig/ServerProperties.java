@@ -1,8 +1,12 @@
 package ash.config.autoconfig;
 
+import ash.config.MyConfigurationProperties;
+import org.springframework.stereotype.Component;
+
+@Component
+@MyConfigurationProperties
 public class ServerProperties {
     private String contextPath;
-
     private int port;
 
     public String getContextPath() {
