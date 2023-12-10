@@ -4,3 +4,4 @@ ash.config.autoconfig.JettyWebServerConfig
 ash.config.autoconfig.DispatcherServletConfig
 ash.config.autoconfig.PropertyPlaceholderConfig
 ash.config.autoconfig.PropertyPostProcessorConfig
+ash.config.autoconfig.DataSourceConfig
