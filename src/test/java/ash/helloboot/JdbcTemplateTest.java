@@ -11,11 +11,6 @@ import static org.assertj.core.api.Assertions.*;
 public class JdbcTemplateTest {
     @Autowired JdbcTemplate jdbcTemplate;
 
-    @BeforeEach
-    void init() {
-        jdbcTemplate.execute("CREATE TABLE IF NOT EXISTS hello(name VARCHAR(50) PRIMARY KEY, count INT)");
-    }
-
     @Test
     void insertAndQuery() {
         jdbcTemplate.update("INSERT INTO hello VALUES (?, ?)", "WOODZ", 143);

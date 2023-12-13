@@ -20,4 +20,9 @@ public class HelloController {
 
         return helloService.sayHello(name); // null 방지
     }
+
+    @GetMapping("/count")
+    public String count(String name) {
+        return name + " : " + helloService.countOf(name);
+    }
 }
